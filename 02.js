@@ -12,6 +12,10 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+    let str = strings.sort(function (a,b) {
+        return b.length - a.length
+    }) [0]
+    return str;
 }
 
 // No modifiques nada debajo de esta linea //
